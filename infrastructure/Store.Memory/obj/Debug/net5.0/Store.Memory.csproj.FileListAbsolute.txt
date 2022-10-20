@@ -1,0 +1,15 @@
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\bin\Debug\net5.0\Store.Memory.deps.json
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\bin\Debug\net5.0\Store.Memory.dll
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\bin\Debug\net5.0\ref\Store.Memory.dll
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\bin\Debug\net5.0\Store.Memory.pdb
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\bin\Debug\net5.0\store.dll
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\bin\Debug\net5.0\store.pdb
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\obj\Debug\net5.0\Store.Memory.csprojAssemblyReference.cache
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\obj\Debug\net5.0\Store.Memory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\obj\Debug\net5.0\Store.Memory.AssemblyInfoInputs.cache
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\obj\Debug\net5.0\Store.Memory.AssemblyInfo.cs
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\obj\Debug\net5.0\Store.Memory.csproj.CoreCompileInputs.cache
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\obj\Debug\net5.0\Store.Memory.csproj.CopyComplete
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\obj\Debug\net5.0\Store.Memory.dll
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\obj\Debug\net5.0\ref\Store.Memory.dll
+C:\Users\Master.1\source\repos\store\infrastructure\Store.Memory\obj\Debug\net5.0\Store.Memory.pdb

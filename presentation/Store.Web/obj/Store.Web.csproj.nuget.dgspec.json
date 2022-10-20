@@ -4,14 +4,14 @@
     "C:\\Users\\Master.1\\source\\repos\\store\\presentation\\Store.Web\\Store.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Master.1\\source\\repos\\store\\presentation\\Store.Web\\Store.Web.csproj": {
+    "C:\\Users\\Master.1\\source\\repos\\store\\domain\\store\\store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Master.1\\source\\repos\\store\\presentation\\Store.Web\\Store.Web.csproj",
-        "projectName": "Store.Web",
-        "projectPath": "C:\\Users\\Master.1\\source\\repos\\store\\presentation\\Store.Web\\Store.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Master.1\\source\\repos\\store\\domain\\store\\store.csproj",
+        "projectName": "store",
+        "projectPath": "C:\\Users\\Master.1\\source\\repos\\store\\domain\\store\\store.csproj",
         "packagesPath": "C:\\Users\\Master.1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Master.1\\source\\repos\\store\\presentation\\Store.Web\\obj\\",
+        "outputPath": "C:\\Users\\Master.1\\source\\repos\\store\\domain\\store\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,137 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master.1\\source\\repos\\store\\infrastructure\\Store.Memory\\Store.Memory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master.1\\source\\repos\\store\\infrastructure\\Store.Memory\\Store.Memory.csproj",
+        "projectName": "Store.Memory",
+        "projectPath": "C:\\Users\\Master.1\\source\\repos\\store\\infrastructure\\Store.Memory\\Store.Memory.csproj",
+        "packagesPath": "C:\\Users\\Master.1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master.1\\source\\repos\\store\\infrastructure\\Store.Memory\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master.1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Master.1\\source\\repos\\store\\domain\\store\\store.csproj": {
+                "projectPath": "C:\\Users\\Master.1\\source\\repos\\store\\domain\\store\\store.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Master.1\\source\\repos\\store\\presentation\\Store.Web\\Store.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Master.1\\source\\repos\\store\\presentation\\Store.Web\\Store.Web.csproj",
+        "projectName": "Store.Web",
+        "projectPath": "C:\\Users\\Master.1\\source\\repos\\store\\presentation\\Store.Web\\Store.Web.csproj",
+        "packagesPath": "C:\\Users\\Master.1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master.1\\source\\repos\\store\\presentation\\Store.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Master.1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Master.1\\source\\repos\\store\\domain\\store\\store.csproj": {
+                "projectPath": "C:\\Users\\Master.1\\source\\repos\\store\\domain\\store\\store.csproj"
+              },
+              "C:\\Users\\Master.1\\source\\repos\\store\\infrastructure\\Store.Memory\\Store.Memory.csproj": {
+                "projectPath": "C:\\Users\\Master.1\\source\\repos\\store\\infrastructure\\Store.Memory\\Store.Memory.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

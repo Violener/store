@@ -1,0 +1,12 @@
+C:\Users\Master.1\source\repos\store\domain\store\bin\Debug\net5.0\store.deps.json
+C:\Users\Master.1\source\repos\store\domain\store\bin\Debug\net5.0\store.dll
+C:\Users\Master.1\source\repos\store\domain\store\bin\Debug\net5.0\ref\store.dll
+C:\Users\Master.1\source\repos\store\domain\store\bin\Debug\net5.0\store.pdb
+C:\Users\Master.1\source\repos\store\domain\store\obj\Debug\net5.0\store.csprojAssemblyReference.cache
+C:\Users\Master.1\source\repos\store\domain\store\obj\Debug\net5.0\store.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Master.1\source\repos\store\domain\store\obj\Debug\net5.0\store.AssemblyInfoInputs.cache
+C:\Users\Master.1\source\repos\store\domain\store\obj\Debug\net5.0\store.AssemblyInfo.cs
+C:\Users\Master.1\source\repos\store\domain\store\obj\Debug\net5.0\store.csproj.CoreCompileInputs.cache
+C:\Users\Master.1\source\repos\store\domain\store\obj\Debug\net5.0\store.dll
+C:\Users\Master.1\source\repos\store\domain\store\obj\Debug\net5.0\ref\store.dll
+C:\Users\Master.1\source\repos\store\domain\store\obj\Debug\net5.0\store.pdb
