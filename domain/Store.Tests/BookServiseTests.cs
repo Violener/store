@@ -40,6 +40,41 @@ namespace Store.Tests
             var actual = bookServise.GetAllByQuery(invalidISBN);
             Assert.Collection(actual, book => Assert.Equal(2, book.Id));
         }
+        [Fact]
+        public void GetAllByQueryWithISBN()
+        {
+            const int _IdISBN = 1;
+            const int Author = 2;
+            var bookrepository = new StubBookRepository();
+            bookrepository.resultOfGetAllByIsbn = new[]
+            {
+                new Book (_IdISBN,"","","")
+            };
+            bookrepository.resultOfGetAllByTitleOrAuthor = new[]
+           {
+                new Book (Author,"","","")
+            };
+            var bookServise = new BookServise(bookrepository);
+            var book = bookServise.GetAllByQuery("ISBN 123-456-789-1");
+            Assert.Collection(book, book => Assert.Equal(_IdISBN, book.Id));
+        }
+        public void GetAllByQueryWithAuthor()
+        {
+            const int _IdISBN = 1;
+            const int Author = 2;
+            var bookrepository = new StubBookRepository();
+            bookrepository.resultOfGetAllByIsbn = new[]
+            {
+                new Book (_IdISBN,"","","")
+            };
+            bookrepository.resultOfGetAllByTitleOrAuthor = new[]
+           {
+                new Book (Author,"","","")
+            };
+            var bookServise = new BookServise(bookrepository);
+            var book = bookServise.GetAllByQuery("Who");
+            Assert.Collection(book, book => Assert.Equal(Author, book.Id));
+        }
 
     }
 }

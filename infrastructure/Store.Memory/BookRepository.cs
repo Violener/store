@@ -14,7 +14,7 @@ namespace Store.Memory
         };
         public Book[] GetAllByTitleOrAuthor(string titlepart)
         {
-           return books.Where(book => book.Title.Contains(titlepart)).ToArray();
+           return books.Where(book => book.Title.Contains(titlepart) || book.Author.Contains(titlepart)).ToArray();
         }
          
         public Book[] GetAllByIsbn(string isbn)
