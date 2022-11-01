@@ -3,14 +3,22 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Store.Memory;
+using store;
 
 namespace Store.Web.Controllers
 {
     public class BookController : Controller
     {
-        public IActionResult Index()
+        IBookRepository bookRepository;
+       public BookController(IBookRepository book)
         {
-            return View();
+            bookRepository = book;
+        }
+        public IActionResult Index(int id)
+        {
+            Book book = bookRepository.GetByID(id);
+            return View(book);
         }
     }
 }

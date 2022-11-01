@@ -6,16 +6,15 @@
 
 <h1>Index</h1>
 @if(Model.Length == 0)
-            {
-               <p>Ничего не найдено</p>
-            }
-            else
-            {
-                <ul>
-                    @foreach(var book in Model)
+ {
+   <p>Ничего не найдено</p>
+ }
+    else
+    {
+    <ul>
+   @foreach(var book in Model)
                 {
                     <li><a href ="@Url.Action("Index","Book",new { id = book.Id})">@book.Title</li>
                 }
-                </ul>
-            }
-}
+     </ul>
+    }
