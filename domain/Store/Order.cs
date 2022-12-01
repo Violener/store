@@ -30,7 +30,12 @@ namespace store
             Id = id;
             this.items = new List<OrderItem>(items);
         }
-        public void AddItem(Book book, int count)
+        public OrderItem Get(int bookId)
+        {
+            int index = items.FindIndex(item => item.BookId == bookId);
+            return items[index];
+        }
+        public void AddorUpdateItem(Book book, int count)
         {
             if (book == null)
                 throw new ArgumentNullException();
@@ -44,6 +49,19 @@ namespace store
                 items.Remove(item);
                 items.Add(new OrderItem(book.Id, item.Count + count, book.Price));
             }
+            
         }
+              public void RemoveItem(Book book)
+              {
+                if(book == null)
+                throw new ArgumentNullException();
+
+                
+                var item = items.SingleOrDefault(x => x.BookId == book.Id);
+            if (item == null)
+                throw new InvalidOperationException();
+            items.RemoveAll(x => x.BookId == book.Id);
+        }
+        
     }
 }

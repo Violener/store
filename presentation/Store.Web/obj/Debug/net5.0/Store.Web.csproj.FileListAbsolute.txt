@@ -127,3 +127,4 @@ C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Raz
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Razor\Views\Book\Index.cshtml.g.cs
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Store.Web.csproj.AssemblyReference.cache
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Razor\Views\Order\Empty.cshtml.g.cs
+C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Razor\Views\Order\Index.cshtml.g.cs

@@ -9,16 +9,25 @@ namespace store
     public class OrderItem
     {
         public int BookId { get; }
-        public int Count { get; }
+        private int count;
+        public int Count { get { return count; } set {
+                ThrowIfInvalidCount(value);
+                    count= value;
+                    } }
         public decimal Price { get; }
 
         public OrderItem(int bookid,int count,decimal price)
         {
-            if (count <= 0)
-                throw new ArgumentOutOfRangeException("Должно быть больше нуля");
+            ThrowIfInvalidCount(count);
             BookId = bookid;
             Count = count;
             Price = price;
+        }
+
+        private static void ThrowIfInvalidCount(int count)
+        {
+            if (count <= 0)
+                throw new ArgumentOutOfRangeException("Должно быть больше нуля");
         }
     }
 }

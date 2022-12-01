@@ -1,5 +1,6 @@
 ﻿using store;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Store.Memory
@@ -25,6 +26,14 @@ namespace Store.Memory
         public Book GetByID(int id)
         {
             return books.Single(book=>book.Id==id);
+        }
+
+        public Book[] GetAllByIds(IEnumerable<int> booksId)
+        {
+            var foundBooks = from book in books
+                             join bookId in booksId on book.Id equals bookId
+                             select book;
+            return foundBooks.ToArray();
         }
     }
 }

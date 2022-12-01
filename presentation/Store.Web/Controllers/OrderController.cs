@@ -26,10 +26,37 @@ namespace Store.Web.Controllers
             if (HttpContext.Session.TryGetCart(out Cart cart))
             {
                 var order = repository.GetById(cart.OrderId);
-               // var model = null;
-                //return model;
+               OrderModel model = Map(order);
+                return View(model);
             }
             return View("Empty");
+        }
+        private OrderModel Map(Order order)
+        {
+            var bookIds = order.Items.Select(item => item.BookId);
+            var books = bookRepository.GetAllByIds(bookIds);
+            var itemModels = from item in order.Items
+                              join book in books on item.BookId equals book.Id
+                              select new OrderItemModel
+                              {
+                                  BookId = book.Id,
+                                  Title = book.Title,
+                                  Author = book.Author,
+                                  Price = item.Price,
+                                  Count = item.Count
+                              };
+            return new OrderModel
+            {
+                Id = order.Id,
+                Items = itemModels.ToArray(),
+                TotalCount=order.TotalCount,
+                TotalPrice=order.TotalPrice
+
+            };
+                             
+                         
+
+                         
         }
         public IActionResult Add(int id)
         {
@@ -46,8 +73,8 @@ namespace Store.Web.Controllers
                 order = repository.Create();
                 cart = new Cart(order.Id);
             }
-
-            order.AddItem(book, 1);
+          
+            order.AddorUpdateItem(book, 1);
             repository.Update();
             cart.TotalCount = order.TotalCount;
             cart.TotalPrice = order.TotalPrice;

@@ -7,10 +7,10 @@ namespace Store.Web.Models
 {
     public class OrderItemModel
     {
-        public int bookId { get; }
-        public string Title { get; }
-        public string Author { get; }
-        public int Count { get; }
-        public decimal Price { get; }
+        public int BookId { get; set; }
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public int Count { get; set; }
+        public decimal Price { get; set; }
     }
 }
