@@ -9,14 +9,27 @@ using System.Threading.Tasks;
 
 namespace Store.Web.Controllers
 {
-    public class CartController : Controller
+    public class OrderController : Controller
     {
         private readonly IBookRepository bookRepository;
         private readonly IOrderRepository repository;
-        public CartController(IBookRepository bookRepository,IOrderRepository repository)
+        public OrderController(IBookRepository bookRepository,IOrderRepository repository)
         {
             this.repository = repository;
             this.bookRepository = bookRepository;
+        }
+
+        public IActionResult Index()
+        {
+
+
+            if (HttpContext.Session.TryGetCart(out Cart cart))
+            {
+                var order = repository.GetById(cart.OrderId);
+               // var model = null;
+                //return model;
+            }
+            return View("Empty");
         }
         public IActionResult Add(int id)
         {
@@ -24,7 +37,7 @@ namespace Store.Web.Controllers
             Order order;
             Cart cart;
             
-            if (!HttpContext.Session.TryGetCart(out cart))
+            if (HttpContext.Session.TryGetCart(out cart))
             {
                 order = repository.GetById(cart.OrderId);
             }

@@ -11,6 +11,6 @@ namespace store
         Order Create();
         Order GetById(int Id);
 
-        void Update(Order order);
+        void Update();
     }
 }

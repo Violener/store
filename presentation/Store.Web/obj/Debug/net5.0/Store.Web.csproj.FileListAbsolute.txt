@@ -9,7 +9,6 @@ C:\Users\Master.1\source\repos\store\presentation\Store.Web\bin\Debug\net5.0\ref
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\bin\Debug\net5.0\Store.Web.pdb
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\bin\Debug\net5.0\Store.Web.Views.dll
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\bin\Debug\net5.0\Store.Web.Views.pdb
-C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Store.Web.csprojAssemblyReference.cache
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Store.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Store.Web.AssemblyInfoInputs.cache
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Store.Web.AssemblyInfo.cs
@@ -126,3 +125,5 @@ C:\Users\Master.1\source\repos\store\presentation\Store.Web\bin\Debug\net5.0\Sto
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\bin\Debug\net5.0\Store.Memory.pdb
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Razor\Views\Search\Index.cshtml.g.cs
 C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Razor\Views\Book\Index.cshtml.g.cs
+C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Store.Web.csproj.AssemblyReference.cache
+C:\Users\Master.1\source\repos\store\presentation\Store.Web\obj\Debug\net5.0\Razor\Views\Order\Empty.cshtml.g.cs
