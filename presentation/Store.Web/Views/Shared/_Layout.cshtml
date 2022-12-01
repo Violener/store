@@ -17,19 +17,16 @@
             </form>
             <span class="navbar-text ml-auto">
                 @{
-                    Cart cart;
-            if (!Context.Session.TryGetCart( out cart))
-            {
-                        cart = new Cart();
-            }
-                    if (cart.items.Count == 0)
+                    
+                    if (!Context.Session.TryGetCart( out Cart cart) && cart.TotalCount > 0)
                     {
-                        @:Cart is ampti
+                           <a href ="">Товаров @cart.TotalCount на сумму @cart.TotalPrice</a>
                     }
                     else
                     {
-                        @:товаров @cart.items.Count на сумму @cart.amount
+                        @:Cart is ampti
                     }
+                   
                  }
             </span>
 

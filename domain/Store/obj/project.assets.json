@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Master.1\\source\\repos\\store\\domain\\Store\\Store.csproj",
-      "projectName": "Store",
-      "projectPath": "C:\\Users\\Master.1\\source\\repos\\store\\domain\\Store\\Store.csproj",
+      "projectUniqueName": "C:\\Users\\Master.1\\source\\repos\\store\\domain\\store\\store.csproj",
+      "projectName": "store",
+      "projectPath": "C:\\Users\\Master.1\\source\\repos\\store\\domain\\store\\store.csproj",
       "packagesPath": "C:\\Users\\Master.1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Master.1\\source\\repos\\store\\domain\\Store\\obj\\",
+      "outputPath": "C:\\Users\\Master.1\\source\\repos\\store\\domain\\store\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.414\\RuntimeIdentifierGraph.json"
       }
     }
   }

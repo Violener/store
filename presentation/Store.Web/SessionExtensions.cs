@@ -19,38 +19,39 @@ namespace Store.Web
             using(var stream = new MemoryStream())
                 using(var writer = new BinaryWriter(stream, Encoding.UTF8, true))
             {
-                writer.Write(value.items.Count);
-                foreach(var items in value.items){
-                    writer.Write(items.Key);
-                    writer.Write(items.Value);
-                }
-                writer.Write(value.amount);
+                writer.Write(value.OrderId);
+                writer.Write(value.TotalCount);
+                writer.Write(value.TotalPrice);
                 session.Set(key, stream.ToArray());
             }
         }
-        public static bool TryGetCart(this ISession session,out Cart value)
+        public static bool TryGetCart(this ISession session, out Cart value)
         {
-            if(session.TryGetValue(key,out byte[] buffer))
+            if (session.TryGetValue(key, out byte[] buffer))
             {
                 using (var stream = new MemoryStream(buffer))
-                    using(var reader = new BinaryReader(stream, Encoding.UTF8))
+                using (var reader = new BinaryReader(stream, Encoding.UTF8))
                 {
-                    value = new Cart();
-                    var length = reader.ReadInt32();
-                    for(int i = 0; i < length; i++)
+                    var orderId = reader.ReadInt32();
+                    var totalCount = reader.ReadInt32();
+                    var totalPrice = reader.ReadDecimal();
+                    value = new Cart(orderId)
                     {
-                        var bookId = reader.ReadInt32();
-                        var count = reader.ReadInt32();
-                        value.items.Add(bookId, count);
-                    }
-                    value.amount = reader.ReadDecimal();
-                    return true;
-                }
-                
-
+                        TotalCount = totalCount,
+                        TotalPrice = totalPrice,
+                      };
+                };
+                return true;
             }
+
+
+
+
+
+
             value = null;
             return false;
         }
+        
     }
 }
